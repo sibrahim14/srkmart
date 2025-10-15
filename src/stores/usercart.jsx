@@ -1,5 +1,5 @@
 import React from "react";
-import '/Users/devrabbit/Documents/ecommerce2/srkmart/src/App.css'
+import '../../App.css';
 import { UserCart } from "../stores/context/cart";
 import Navbar from "../stores/components/Navbar";
 
