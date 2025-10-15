@@ -1,5 +1,5 @@
 import React from "react";
-import '../../App.css';
+// import '../../App.css';
 import { UserCart } from "../stores/context/cart";
 import Navbar from "../stores/components/Navbar";
 
