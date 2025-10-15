@@ -14,20 +14,20 @@ function Product() {
     <div>
       <div>
         <img
-          src="../../../public/assets/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-vector.jpg"
+          src="/assets/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-vector.jpg"
           alt=""
           className="baner"
         />
       </div>
       <img
-        src="../../../public/assets/63fd3a946fd2d3cc.webp"
+        src="/assets/63fd3a946fd2d3cc.webp"
         alt=""
         className="baner"
       />
       <Mobiles />
       <div>
         <img
-          src="../../../public/assets/9a13dc79ca4368d6c87acb2e52cadf9d.jpg"
+          src="/assets/9a13dc79ca4368d6c87acb2e52cadf9d.jpg"
           alt=""
           className="baner1"
         />
