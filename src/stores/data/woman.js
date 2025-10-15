@@ -7,6 +7,7 @@ export const womanData = [{
         "model": "Flowy Maxi",
         "price": "79.99",
         "category": "Clothing",
+        "sub-category": "woman",
         "description": "A flowy maxi dress with floral patterns, perfect for summer occasions."
     },
     {
@@ -18,6 +19,7 @@ export const womanData = [{
         "model": "Classic Silk",
         "price": "49.90",
         "category": "Clothing",
+        "sub-category": "woman",
         "description": "A classic silk blouse suitable for professional and casual settings."
     },
     {
@@ -29,6 +31,7 @@ export const womanData = [{
         "model": "501 Skinny",
         "price": "89.50",
         "category": "Clothing",
+        "sub-category": "woman",
         "description": "Skinny fit jeans with a classic 5-pocket design, perfect for everyday wear."
     },
     {
@@ -40,6 +43,7 @@ export const womanData = [{
         "model": "Utility Jumpsuit",
         "price": "59.99",
         "category": "Clothing",
+        "sub-category": "woman",
         "description": "A utility-style jumpsuit with a modern and versatile look."
     },
     {
@@ -51,6 +55,7 @@ export const womanData = [{
         "model": "A-Line Mini",
         "price": "39.99",
         "category": "Clothing",
+        "sub-category": "woman",
         "description": "A stylish A-line mini skirt with a retro touch, suitable for various occasions."
     },
     {
@@ -62,6 +67,7 @@ export const womanData = [{
         "model": "Cable Knit",
         "price": "49.95",
         "category": "Clothing",
+        "sub-category": "woman",
         "description": "A cozy cable knit sweater with a timeless design, perfect for chilly days."
     },
     {
@@ -73,6 +79,7 @@ export const womanData = [{
         "model": "Tailored Blazer",
         "price": "79.99",
         "category": "Clothing",
+        "sub-category": "woman",
         "description": "A tailored blazer with a chic silhouette, suitable for formal and casual looks."
     },
     {
@@ -84,6 +91,7 @@ export const womanData = [{
         "model": "Align Leggings",
         "price": "98.00",
         "category": "Clothing",
+        "sub-category": "woman",
         "description": "High-quality leggings with a buttery soft feel, ideal for yoga and workouts."
     },
     {
@@ -95,6 +103,7 @@ export const womanData = [{
         "model": "Bikini Set",
         "price": "59.50",
         "category": "Clothing",
+        "sub-category": "woman",
         "description": "A stylish bikini set with vibrant patterns, perfect for beach days."
     },
     {
@@ -106,6 +115,7 @@ export const womanData = [{
         "model": "High-Rise Skinny",
         "price": "49.95",
         "category": "Clothing",
+        "sub-category": "woman",
         "description": "High-rise skinny pants with a flattering fit, suitable for various occasions."
     },
     {
@@ -117,6 +127,7 @@ export const womanData = [{
         "model": "Wool Blend Coat",
         "price": "299.00",
         "category": "Clothing",
+        "sub-category": "woman",
         "description": "A stylish wool blend coat with a modern and elegant design, perfect for colder days."
     },
 ]

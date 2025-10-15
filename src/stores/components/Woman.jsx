@@ -1,11 +1,29 @@
-import React from 'react'
-import { womanData } from '../data/woman'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { supabase } from './singIn/superbase'
 const Woman = () => {
- const fristFiveImages=womanData.slice(0,5)
+
+    const [women,setWomen] =useState([])
+   
+      useEffect(()=>{
+        const fetchWomen =async() =>{
+         const{ data, error} = await supabase
+         .from ('products')
+         .select('*')
+         .eq ('sub_category', 'women')
+         if (error){
+           console.error ('error feacthing data',error)
+         } else{
+           setWomen(data)
+         }
+        }
+        fetchWomen()
+    },[])
+   
+ const fristFiveImages=women.slice(0,5)
   return (
     <>
-    <h2>woman ware</h2>
+    <h2>women ware</h2>
 
      <div className='proSection'>
      { fristFiveImages.map ((item)=>{

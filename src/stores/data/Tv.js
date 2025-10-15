@@ -6,6 +6,7 @@ export const TvData = [{
         "model": "OLED CX Series",
         "price": "1999.00",
         "category": "Electronics",
+        "sub-category": "tv",
         "description": "A high-end OLED TV with stunning picture quality and smart features."
     },
     {
@@ -16,6 +17,7 @@ export const TvData = [{
         "model": "Bravia X90J",
         "price": "1499.00",
         "category": "Electronics",
+        "sub-category": "mobile",
         "description": "A 4K LED TV with advanced processing and immersive audio technology."
     },
     {
@@ -26,6 +28,7 @@ export const TvData = [{
         "model": "QLED Q80A",
         "price": "1799.99",
         "category": "Electronics",
+        "sub-category": "mobile",
         "description": "A QLED TV with vibrant colors and impressive upscaling capabilities."
     },
     {
@@ -36,6 +39,7 @@ export const TvData = [{
         "model": "6-Series",
         "price": "799.00",
         "category": "Electronics",
+        "sub-category": "mobile",
         "description": "An affordable 4K TV with Dolby Vision HDR and Roku smart platform."
     },
     {
@@ -46,6 +50,7 @@ export const TvData = [{
         "model": "P-Series Quantum",
         "price": "1199.50",
         "category": "Electronics",
+        "sub-category": "mobile",
         "description": "A quantum dot 4K TV with high brightness and local dimming zones."
     },
     {
@@ -56,6 +61,7 @@ export const TvData = [{
         "model": "U8G Series",
         "price": "999.00",
         "category": "Electronics",
+        "sub-category": "mobile",
         "description": "A ULED TV with impressive contrast and support for various HDR formats."
     },
     {
@@ -66,6 +72,7 @@ export const TvData = [{
         "model": "HZ2000",
         "price": "2499.99",
         "category": "Electronics",
+        "sub-category": "mobile",
         "description": "A flagship OLED TV with customized professional-grade picture quality."
     },
     {
@@ -76,6 +83,7 @@ export const TvData = [{
         "model": "Aquos R5G",
         "price": "1499.00",
         "category": "Electronics",
+        "sub-category": "mobile",
         "description": "A 5G-compatible 4K TV with detailed images and advanced connectivity."
     },
     {
@@ -86,6 +94,7 @@ export const TvData = [{
         "model": "Ambilight 4K",
         "price": "999.99",
         "category": "Electronics",
+        "sub-category": "mobile",
         "description": "A 4K TV with Ambilight technology, creating an immersive viewing experience."
     },
     {
@@ -96,6 +105,7 @@ export const TvData = [{
         "model": "X438BV-FSR",
         "price": "299.50",
         "category": "Electronics",
+        "sub-category": "mobile",
         "description": "An affordable full HD TV with basic features for everyday entertainment."
     },
    

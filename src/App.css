@@ -789,3 +789,99 @@ h2 {
   width: 100%;
   height: 390px;
 }
+/* adimin page */
+/* General layout */
+.admin-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Page heading */
+.admin-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1e3a8a;
+}
+
+/* Search & Filter section */
+.admin-page .search-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.admin-page input,
+.admin-page select {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 1 1 200px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.admin-page button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e3a8a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-page button:hover {
+  background-color: #374ea1;
+}
+
+.admin-page button.cancel {
+  background-color: #b91c1c;
+}
+
+.admin-page button.cancel:hover {
+  background-color: #f87171;
+}
+
+/* Form styling */
+.admin-page form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.admin-page form input {
+  flex: 1 1 200px;
+}
+
+/* Table styling */
+.admin-page table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.admin-page table th,
+.admin-page table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.admin-page table th {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.admin-page table tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+.admin-page table tr:hover {
+  background-color: #e0e7ff;
+}

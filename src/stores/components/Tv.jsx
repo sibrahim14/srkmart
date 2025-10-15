@@ -1,9 +1,28 @@
-import React from 'react'
-import {TvData} from "../data/Tv";
+import React, { useEffect, useState } from 'react'
+import { supabase } from './singIn/superbase';
 import { Link } from 'react-router-dom';
  const Tv = () => {
  
- const fristFiveImages =TvData.slice(0,5)
+    const [tv,setTv] =useState([])
+   
+      useEffect(()=>{
+        const fetchTv =async() =>{
+         const{ data, error} = await supabase
+         .from ('products')
+         .select('*')
+         .eq ('sub_category', 'tv')
+         if (error){
+           console.error ('error feacthing data',error)
+         } else{
+           setTv(data)
+         }
+        }
+        fetchTv()
+    },[])
+    
+     const fristFiveImages =tv.slice(0,5)
+    
+   
  
   return (
     <>

@@ -6,6 +6,7 @@ export const watchData = [{
         "model": "Watch Series 7",
         "price": "399.00",
         "category": "Wearable",
+        "sub-category": "watch",
         "description": "The latest Apple Watch with a larger display and advanced health features."
     },
     {
@@ -16,6 +17,7 @@ export const watchData = [{
         "model": "Galaxy Watch 4",
         "price": "299.99",
         "category": "Wearable",
+        "sub-category": "watch",
         "description": "A Samsung smartwatch with comprehensive health tracking and versatile design."
     },
     {
@@ -26,6 +28,7 @@ export const watchData = [{
         "model": "Versa 3",
         "price": "229.00",
         "category": "Wearable",
+        "sub-category": "watch",
         "description": "A Fitbit smartwatch with built-in GPS and fitness tracking capabilities."
     },
     {
@@ -36,6 +39,7 @@ export const watchData = [{
         "model": "Forerunner 945",
         "price": "599.50",
         "category": "Wearable",
+        "sub-category": "watch",
         "description": "A high-end Garmin GPS watch designed for serious athletes and outdoor enthusiasts."
     },
     {
@@ -46,6 +50,7 @@ export const watchData = [{
         "model": "Gen 5",
         "price": "249.00",
         "category": "Wearable",
+        "sub-category": "watch",
         "description": "A stylish Fossil smartwatch with Wear OS and customizable watch faces."
     },
     {
@@ -55,7 +60,8 @@ export const watchData = [{
         "brand": "Casio",
         "model": "G-Shock GA-2100",
         "price": "129.99",
-        "category": "Wearable",
+        "category": "Wearable",  
+        "sub-category": "watch",
         "description": "A rugged and iconic G-Shock watch with a modern and slim design."
     },
     {
@@ -66,6 +72,7 @@ export const watchData = [{
         "model": "Carrera Calibre Heuer 02",
         "price": "5999.00",
         "category": "Luxury",
+        "sub-category": "watch",
         "description": "A luxurious TAG Heuer mechanical watch with a sporty and sophisticated design."
     },
     {
@@ -76,6 +83,7 @@ export const watchData = [{
         "model": "Weekender Chronograph",
         "price": "89.00",
         "category": "Wearable",
+        "sub-category": "watch",
         "description": "A versatile Timex watch with a chronograph function and interchangeable straps."
     },
     {
@@ -86,6 +94,7 @@ export const watchData = [{
         "model": "Eco-Drive Promaster",
         "price": "299.99",
         "category": "Wearable",
+        "sub-category": "watch",
         "description": "A Citizen watch powered by light with durable construction for outdoor adventures."
     },
     {
@@ -96,6 +105,7 @@ export const watchData = [{
         "model": "SKX007",
         "price": "199.50",
         "category": "Wearable",
+        "sub-category": "watch",
         "description": "A classic Seiko diver's watch known for its reliability and timeless design."
     },
    

@@ -1,9 +1,27 @@
-import React from 'react'
-import {mobileData} from "../data/mobiles";
+import React, { useEffect, useState } from 'react'
+import { supabase } from './singIn/superbase';
 import { Link } from 'react-router-dom';
  const Mobiles = () => {
- 
- const fristFiveImages =mobileData.slice(0,5)
+  
+  
+    const [mobils,setMobils] =useState([])
+   
+      useEffect(()=>{
+        const fetchMobils =async() =>{
+         const{ data, error} = await supabase
+         .from ('products')
+         .select('*')
+         .eq ('sub_category', 'mobile')
+         if (error){
+           console.error ('error feacthing data',error)
+         } else{
+           setMobils(data)
+         }
+        }
+        fetchMobils()
+    },[])
+  
+ const fristFiveImages =mobils.slice(0,5)
  
   return (
     <>

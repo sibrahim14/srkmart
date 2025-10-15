@@ -108,7 +108,7 @@ const Navbar = () => {
         <div className='title'>
           <Link to='/'><h2>SRK-mart</h2></Link>
         </div>
-
+        
         <div className='search'>
           <input type='text' placeholder='search...' id='input-search' />
         </div>
@@ -140,6 +140,7 @@ const Navbar = () => {
           <Link to='/tv'><li>TV</li></Link>
           <Link to='/watch'><li>Watch</li></Link>
           <Link to='/woman'><li>Woman Wear</li></Link>
+          <Link to ='adimen'><li>adimen</li></Link>
         </ul>
       </div>
 

@@ -40,7 +40,7 @@ export const CartProvider = ({ children }) => {
       prev
         .map((item) =>
           item.id === id
-            ? { ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 3 }
+            ? { ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 1 }
             : item
         )
     );

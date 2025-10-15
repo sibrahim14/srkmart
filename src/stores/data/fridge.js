@@ -6,6 +6,7 @@ export const fridgeData = [{
         "model": "CoolFrost 5000",
         "price": "999.99",
         "category": "Electronics",
+        "sub-category": "fridge",
         "description": "A spacious and energy-efficient refrigerator with advanced cooling technology."
     },
     {
@@ -16,6 +17,7 @@ export const fridgeData = [{
         "model": "FridgeMaster Pro",
         "price": "1499.00",
         "category": "Electronics",
+        "sub-category": "fridge",
         "description": "A high-capacity refrigerator with smart features and precise temperature control."
     },
     {
@@ -26,6 +28,7 @@ export const fridgeData = [{
         "model": "ChillZone 300",
         "price": "899.99",
         "category": "Electronics",
+        "sub-category": "fridge",
         "description": "A modern refrigerator with adjustable shelves and efficient cooling performance."
     },
     
@@ -37,6 +40,7 @@ export const fridgeData = [{
         "model": "FreezeGuard 800",
         "price": "799.00",
         "category": "Electronics",
+        "sub-category": "fridge",
         "description": "A premium refrigerator with customizable compartments and stylish design."
     },
     {
@@ -47,6 +51,7 @@ export const fridgeData = [{
         "model": "SmartCool+",
         "price": "1199.99",
         "category": "Electronics",
+        "sub-category": "fridge",
         "description": "A smart refrigerator with Wi-Fi connectivity and built-in voice assistant."
     },
     {
@@ -57,6 +62,7 @@ export const fridgeData = [{
         "model": "IceMaster 1500",
         "price": "1399.00",
         "category": "Electronics",
+        "sub-category": "fridge",
         "description": "A reliable refrigerator with spacious freezer and high-capacity ice maker."
     },
     {
@@ -77,6 +83,7 @@ export const fridgeData = [{
         "model": "CoolWave French Door",
         "price": "1699.50",
         "category": "Electronics",
+        "sub-category": "fridge",
         "description": "A French door refrigerator with sleek design and ample storage space."
     },
     {
@@ -87,6 +94,7 @@ export const fridgeData = [{
         "model": "ProChill 8000",
         "price": "2999.00",
         "category": "Electronics",
+        "sub-category": "fridge",
         "description": "A high-end refrigerator with dual cooling zones and advanced preservation features."
     },
     {
@@ -97,6 +105,7 @@ export const fridgeData = [{
         "model": "Elite Series",
         "price": "1199.00",
         "category": "Electronics",
+        "sub-category": "fridge",
         "description": "An energy-efficient refrigerator with modern features and elegant stainless steel finish."
     },
    

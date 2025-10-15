@@ -1,9 +1,27 @@
-import React from 'react'
-import { computerData } from '../data/computers'
+import React, { useEffect, useState } from 'react'
+import { supabase } from './singIn/superbase'
 import { Link } from 'react-router-dom'
- const Computers = () => {
+
+const Computers = () => {
+  const[computer,setComputer]= useState([])
+
+  useEffect(()=>{
+    const fetchComputer =async() =>{
+      const{data,error}=await supabase
+      .from ('products')
+      .select('*')
+      .eq ('sub_category','computer')
+      if (error){
+        console.error ('error feacthing data', error)
+      } else{
+        setComputer(data)
+      }
+    }
+    fetchComputer()
+  },[])
+
  
- const fristFiveImages =computerData.slice(0,5)
+ const fristFiveImages =computer.slice(0,5)
  
   return (
    
