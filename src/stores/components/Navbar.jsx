@@ -140,7 +140,7 @@ const Navbar = () => {
           <Link to='/tv'><li>TV</li></Link>
           <Link to='/watch'><li>Watch</li></Link>
           <Link to='/woman'><li>Woman Wear</li></Link>
-          <Link to ='adimen'><li>adimen</li></Link>
+         
         </ul>
       </div>
 
