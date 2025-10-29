@@ -29,7 +29,7 @@ const Womanpage = () => {
       <div className='pageSaction'>
         {women.map((item) => (
           <div key={item.id}>
-            <Link to={`/watch/${item.id}`}>
+            <Link to={`/woman/${item.id}`}>
               <div className="pageImg">
                 <img src={item.image} alt={item.model} />
               </div>
