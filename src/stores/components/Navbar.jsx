@@ -1,38 +1,37 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserCart } from '../context/cart';
-import { LogIn, UserPlus } from 'lucide-react';
+import { LogIn, UserPlus, LogOut } from 'lucide-react'; // 🆕 Added LogOut icon
 import { supabase } from './singIn/superbase';
 
 const Navbar = () => {
   const { cartItems } = UserCart();
 
-  // 🔐 Common state
+  // 🧠 User State
+  const [user, setUser] = useState(null);
+
+  // 🧩 Auth Form States
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
-  // ✳️ SignIn + SignUp toggles
+  const [fullName, setFullName] = useState('');
   const [showSignIn, setShowSignIn] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
 
-  const [fullName, setFullName] = useState('');
   const navigate = useNavigate();
-
   const formRef = useRef(null);
 
-  // 🧩 Toggle Sign In
+  // 🧩 Toggle Functions
   const toggleSignIn = () => {
     setShowSignIn(true);
     setShowSignUp(false);
   };
 
-  // 🧩 Toggle Sign Up
   const toggleSignUp = () => {
     setShowSignUp(true);
     setShowSignIn(false);
   };
 
-  // ❌ Hide form when clicking outside
+  // ❌ Hide popup on outside click
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (formRef.current && !formRef.current.contains(event.target)) {
@@ -58,9 +57,17 @@ const Navbar = () => {
     }
 
     try {
-      const { error } = await supabase.auth.signInWithPassword({ email, password });
+      const { data, error } = await supabase.auth.signInWithPassword({ email, password });
       if (error) throw error;
 
+      // ✅ Get profile data
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('*')
+        .eq('email', email)
+        .single();
+
+      setUser(profile);
       alert('Login Successful!');
       setShowSignIn(false);
       navigate('/');
@@ -76,15 +83,12 @@ const Navbar = () => {
       return;
     }
 
-    // 1️⃣ Create user in Supabase Auth
     const { data, error } = await supabase.auth.signUp({ email, password });
-
     if (error) {
       alert('Signup failed: ' + error.message);
       return;
     }
 
-    // 2️⃣ Add profile to "profiles" table
     const user = data.user;
     if (user) {
       const { error: insertError } = await supabase.from('profiles').insert([
@@ -97,10 +101,35 @@ const Navbar = () => {
       }
     }
 
+    setUser({ full_name: fullName, email });
     alert('Signup successful!');
     setShowSignUp(false);
     navigate('/');
   };
+
+  // 🚪 Handle Logout
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    setUser(null);
+    alert('Logged out successfully!');
+    navigate('/');
+  };
+
+  // 🧭 Check if user is already logged in (on refresh)
+  useEffect(() => {
+    const getUser = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) {
+        const { data: profile } = await supabase
+          .from('profiles')
+          .select('*')
+          .eq('id', user.id)
+          .single();
+        setUser(profile);
+      }
+    };
+    getUser();
+  }, []);
 
   return (
     <>
@@ -108,20 +137,31 @@ const Navbar = () => {
         <div className='title'>
           <Link to='/'><h2>SRK-mart</h2></Link>
         </div>
-        
+
         <div className='search'>
           <input type='text' placeholder='search...' id='input-search' />
         </div>
 
         <div className='user'>
           <div className='user-detail'>
-            <button className='signin-btn' onClick={toggleSignIn}>
-              <LogIn className='login-logo' /> SignIn
-            </button>
-            /
-            <button className='signup-btn' onClick={toggleSignUp}>
-              <UserPlus className='signup-logo' /> SignUp
-            </button>
+            {user ? (
+              <div className='welcome'>
+                 {user.full_name || user.email}
+                <button className='logout-btn' onClick={handleLogout}>
+                  <LogOut className='logout-logo' /> Logout
+                </button>
+              </div>
+            ) : (
+              <>
+                <button className='signin-btn' onClick={toggleSignIn}>
+                  <LogIn className='login-logo' /> SignIn
+                </button>
+                /
+                <button className='signup-btn' onClick={toggleSignUp}>
+                  <UserPlus className='signup-logo' /> SignUp
+                </button>
+              </>
+            )}
           </div>
 
           <Link to='/cart'>
@@ -140,7 +180,6 @@ const Navbar = () => {
           <Link to='/tv'><li>TV</li></Link>
           <Link to='/watch'><li>Watch</li></Link>
           <Link to='/woman'><li>Woman Wear</li></Link>
-         
         </ul>
       </div>
 
@@ -172,7 +211,6 @@ const Navbar = () => {
 
             <div className='button-group'>
               <button onClick={handleSignIn}>Sign In</button>
-              
             </div>
           </div>
         </>

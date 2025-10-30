@@ -36,7 +36,7 @@ a {
 
 .navSection .title h2 {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 700vw;
   color: var(--logo-color);
   cursor: pointer;
   transition: color 0.2s;
@@ -97,7 +97,7 @@ a {
   gap: 5px;
   cursor: pointer;
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 50vw;
   padding: 5px;
   border-radius: 4px;
   transition: color 0.2s, background-color 0.2s;
@@ -225,10 +225,10 @@ a {
     margin-top: 25px;
 }
 .button-group button {
-    width: 100vw;
+    width: 32vw;
     padding: 12px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 60;
     color: var(--nav-bg-color);
     background-color: var(--accent-color);
     border: none;
@@ -237,7 +237,7 @@ a {
     transition: background-color 0.2s, transform 0.2s;
 }
 .button-group button:hover {
-    background-color: #e8ff66;
+    background-color: #afc31d;
     transform: translateY(-1px);
 }
 
@@ -259,7 +259,7 @@ a {
     }
     
     .title {
-        flex-basis: 40%; 
+        flex-basis: 40%vw; 
     }
     
     .user {
@@ -394,7 +394,7 @@ a {
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 25px;
   padding: 40px 60px;
-  background: #f8f9fc;
+  background: #d8d833;
 }
 
 /* ===== Individual Product Card ===== */
@@ -878,4 +878,30 @@ h2 {
   width: 100%;
   height: 390px;
 }
+/* 🔘 Logout Button Style */
+.logout-btn {
+  background-color: #161515; /* red button */
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #e63939; /* darker red on hover */
+  transform: scale(1.05);
+}
+
+.logout-logo {
+  width: 18px;
+  height: 18px;
+}
+
 
