@@ -32,7 +32,7 @@ const Woman = () => {
           <Link to={`/woman/${item.id}`}>
            <img className= 'proImage'src={item.image} alt="" />
           </Link>
-           <p>{item.price }</p>
+           <p>₹{item.price }</p>
          </div>
        )
       })

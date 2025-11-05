@@ -35,7 +35,7 @@ const Computers = () => {
            <Link to={`/computer/${item.id}`}>
             <img className= 'proImage'src={item.image} alt="" />
            </Link>
-            <p>{item.price }</p>
+            <p>₹{item.price }</p>
           </div>
         )
        })
