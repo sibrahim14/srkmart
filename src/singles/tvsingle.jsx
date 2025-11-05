@@ -42,7 +42,7 @@ const Tvsingle = () => {
              <h3>{product?.model}</h3>
           </div>
            <div className="ind-price">
-             <h2>{product?.price}</h2>
+             <h2>₹{product?.price}</h2>
              </div>
               <div className="ind-dese">
                 <p>

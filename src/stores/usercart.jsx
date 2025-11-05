@@ -55,7 +55,7 @@ const { cartItems, removeFromCart,incrementQuantity, decrementQuantity } = UserC
          {/* THE GRAND TOTAL JSX */}
          {cartItems.length > 0 && (
           <h3 className="grand-total">
-            Total Price : ${grandTotal}
+            Total Price : ₹{grandTotal}
           </h3>
         )}
           

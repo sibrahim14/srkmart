@@ -394,7 +394,7 @@ a {
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 25px;
   padding: 40px 60px;
-  background: #d8d833;
+  background: antiquewhite;
 }
 
 /* ===== Individual Product Card ===== */
@@ -494,7 +494,7 @@ h2 {
   background-color: #ffffff;
   border-radius: 14px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  width: 200pxvw;
   text-align: center;
   padding: 15px;
   transition: all 0.3s ease;
